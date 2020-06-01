@@ -26,7 +26,7 @@ export class AuthService {
     });
   }
 
-  guardarUsuario(email: string, password: string, name: string, lastname: string, telefono: any, identificacion: any) {
+  guardar(email: string, password: string, name: string, lastname: string, telefono: any, identificacion: any) {
     return new Promise ((resolve, reject) => {
       this.AFauth.auth.createUserWithEmailAndPassword(email, password).then( res => {
           // console.log(res.user.uid);

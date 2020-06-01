@@ -6,9 +6,9 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item>
+      <ion-item *ngFor="let item of stream | async as list">
         <ion-icon name="person"></ion-icon>
-        <ion-label>{{name.firebase}}</ion-label>
+        <ion-label>{{usuarios.nombre}}</ion-label>
       </ion-item><br>
       <ion-item href="/cultivo">
         <ion-icon name="flower"></ion-icon>
